@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">blackcoffer</string>
+    <string name="title"><font color="@color/white">Shlok Yadav</font></string>
+    <string name="subtitle"><font color="@color/white">Badlapur</font></string>
+    <string name="Personal"><font color="@color/white">Personal</font></string>
+    <string name="Business"><font color="@color/white">Business</font></string>
+    <string name="Merchant"><font color="@color/white">Merchant</font></string>
+    <string name="drop_hint">Hi community! I am open to new Connections</string>
+    <string name="profileName">Shlok Yadav</string>
+    <string name="profiledesignation">Badlapur | Android Developer</string>
+    <string name="intrest">Coffee | Business | Friendship | Movies | Hobbies</string>
+
+
+    <style name="CustomTabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <!-- Change the text color as needed -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+</resources>

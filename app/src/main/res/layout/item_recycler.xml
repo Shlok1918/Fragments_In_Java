@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recCard"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dummy_profile"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/invite_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:foregroundTint="#F3EEEE"
+                    android:text=" + INVITE"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:textSize="16dp"/>
+
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shlok Yadav"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/profile_Detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profiledesignation"
+                    android:textSize="15dp"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/profile_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Within 200-300 m"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="20dp"/>
+                <SeekBar
+                    android:id="@+id/seekBar_distance"
+                    style="@style/CustomSeekBar"
+                    android:layout_width="150dp"
+                    android:layout_height="10dp"
+                    android:max="10"
+                    android:progress="3"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/profile_interest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/intrest"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/profile_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi community! I am open to new Connections"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:textColor="@color/blue"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="10dp"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
